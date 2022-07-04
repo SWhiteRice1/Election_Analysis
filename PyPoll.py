@@ -31,4 +31,90 @@ with open(file_to_load) as election_data:
 
     # Print the file object.
      print(election_data)
-<open file 'Resources/election_results.csv', mode 'r' at 0x10479c780>
+election_data.close()
+file_to_save="Resources/election_results.csv"
+open(file_to_save, "w")
+election_data.close()
+# Create a filename variable to a direct or indirect path to the file.
+file_to_save = os.path.join("analysis", "election_analysis.txt")
+# Using the open() function with the "w" mode we will write data to the file.
+open(file_to_save, "w")
+# Use the open statement to open the file as a text file.
+outfile = open(file_to_save, "w")
+# Write some data to the file.
+outfile.write("Hello World")
+
+# Close the file
+outfile.close()
+# Using the with statement open the file as a text file.
+with open(file_to_save, "w") as txt_file:
+
+    # Write some data to the file.
+# Write three counties to the file.
+     # Write three counties to the file.
+     txt_file.write("Arapahoe")
+     txt_file.write("Denver")
+     txt_file.write("Jefferson")
+with open(file_to_save, "w") as txt_file:
+     txt_file.write("Arapahoe")
+     txt_file.write("Denver")
+     txt_file.write("Jefferson")
+          # Write three counties to the file.
+     txt_file.write("Arapahoe, Denver, Jefferson")
+with open(file_to_save, "w") as txt_file:
+     txt_file.write("Arapahoe, Denver, Jefferson")
+with open(file_to_save, "w") as txt_file:
+     txt_file.write("Counties in the Election\n---------------\nArapahoe\nDenver\nJefferson")
+# Add our dependencies.
+import csv
+import os
+# Assign a variable to load a file from a path.
+file_to_load = os.path.join("Resources", "election_results.csv")
+# Assign a variable to save the file to a path.
+file_to_save = os.path.join("analysis", "election_analysis.txt")
+
+# Open the election results and read the file.
+with open(file_to_load) as election_data:
+     
+    # To do: read and analyze the data here.
+       # Read the file object with the reader function.
+     file_reader = csv.reader(election_data)
+     for row in file_reader:
+          print(row)
+    #Print each row in the CSV file.
+       # Read the file object with the reader function.
+     file_reader = csv.reader(election_data)
+     headers = next(file_reader)
+     print(headers)  
+    # Print the header row.
+ # Add our dependencies.
+import csv
+import os
+# Assign a variable to load a file from a path.
+file_to_load = os.path.join("Resources", "election_results.csv")
+# Assign a variable to save the file to a path.
+file_to_save = os.path.join("analysis", "election_analysis.txt")
+total_votes=0
+# Candidate option
+candidate_options=[]
+
+# Open the election results and read the file.
+with open(file_to_load) as election_data:
+    file_reader = csv.reader(election_data)
+
+    # Read and print the header row.
+    headers = next(file_reader)
+   
+    for row in file_reader:
+         #2. Add to the toal vote count
+         total_votes += 1
+        
+         #Print the candidate name from each row
+         candidate_name=row[2]
+
+         if candidate_name not in candidate_options:
+              #Add it to the list of candidates
+              candidate_options.append(candidate_name)
+#Print the candidate list
+print(candidate_options)
+
