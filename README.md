@@ -39,9 +39,9 @@ The analysis of the election show that:
  ## Challenge Overview
  
  ## Challenge Summary
-    As the election commission reviews the results of this election and this script, the value of this script should be seen clearly. By utilizing this code, it will allow you to quickly analyze election results by county and candidate to determine the winner and where majority of the voters are from to determine the accuracy and reliability of the vote. To reuse the script, ensure the csv file path and txt files that are created are correct.
+ As the election commission reviews the results of this election and this script, the value of this script should be seen clearly. By utilizing this code, it will allow you to quickly analyze election results by county and candidate to determine the winner and where majority of the voters are from to determine the accuracy and reliability of the vote. To reuse the script, ensure the csv file path and txt files that are created are correct.
 - The file path and txt.file can be corrected beginning in line 5 of the code as seen below:
-  -   '''# Add a variable to load a file from a path.
+'''# Add a variable to load a file from a path.
 file_to_load = os.path.join("Resources", "election_results.csv")
 # Add a variable to save the file to a path.
 file_to_save = os.path.join("Resources", "election_analysis.txt")'''
