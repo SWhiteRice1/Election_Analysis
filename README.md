@@ -17,7 +17,7 @@ A Colorado Board of Election employee has given you the following tasks to compl
 - Data Source: election_results.csv
 - Software: Python 3.7.6, Visual Studio Code 1.38.1
 
-## Summary
+## Summary*
 The analysis of the election show that:
 - There were "369,711" votes cast in the election.
 - The County results were:
@@ -36,6 +36,7 @@ The analysis of the election show that:
  - The winner of the election was:
   - Diana DeGette, who received "73.8%" of the vote and "272,892" number of votes.
   
+  * Also see election_results.txt
  ## Challenge Summary
  As the election commission reviews the results of this election and this script, the value of this script should be seen clearly. By utilizing this code, it will allow you to quickly analyze election results by county and candidate to determine the winner and where majority of the voters are from to determine the accuracy and reliability of the vote. To reuse the script, ensure the csv file path and txt files that are created are correct.
 - The file path and txt.file can be corrected beginning in line 5 of the code as seen below:
